@@ -23,8 +23,6 @@
 
 /* --------1. Настройка fonts (END)---------*/
 
-
-
 /* --------2. Сброс Css (START)---------*/
 
 .container,
@@ -44,12 +42,11 @@
   padding-left: 0;
 }
 
-
 .row {
   margin-top: 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-right: 0;
 }
 
@@ -91,14 +88,13 @@
 
 /* --------3. Настройка body и background (END)---------*/
 
-
 /* --------4. Header (START)---------*/
 
 .navbar-nav {
   min-width: 636px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -148,8 +144,8 @@
 
 .navbar-expand-lg .navbar-collapse {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -181,21 +177,27 @@
 
 @media screen and (max-width: 450px) {
   .logo {
-  max-width: 180px;
-  height: 34px;
+    max-width: 180px;
+    height: 34px;
   }
 }
 
-
-
 /* --------4. Header (END)---------*/
-
 
 /* --------5. Main (START)---------*/
 
 .image {
   margin-top: 116px;
   margin-bottom: 86px;
+  background-image: url(../images/text.svg);
+  width: 425px;
+  height: 78px;
+}
+
+@media screen and (max-width: 1151px) {
+  .image {
+    background-image: url(../images/title.png);
+  }
 }
 
 .row-grid {
@@ -290,11 +292,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   opacity: 0.97;
   cursor: pointer;
 }
@@ -305,59 +307,171 @@
 }
 
 .grid-item_type_rt {
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(25%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.03)));
-  background: -o-linear-gradient(top right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
-  background: linear-gradient(to bottom left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    color-stop(25%, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 0.03))
+  );
+  background: -o-linear-gradient(
+    top right,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
 }
 
 .grid-item_type_rt:hover {
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(70%, rgba(255, 255, 255, 0.01)), color-stop(150%, rgba(255, 255, 255, 0.65)));
-  background: -o-linear-gradient(top right, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
-  background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left bottom,
+    color-stop(70%, rgba(255, 255, 255, 0.01)),
+    color-stop(150%, rgba(255, 255, 255, 0.65))
+  );
+  background: -o-linear-gradient(
+    top right,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
   border-bottom: 1px solid #8e9198;
   border-left: 1px solid #8e9198;
 }
 
 .grid-item_type_rb {
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(25%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.03)));
-  background: -o-linear-gradient(bottom right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
-  background: linear-gradient(to top left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
+  background: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    color-stop(25%, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 0.03))
+  );
+  background: -o-linear-gradient(
+    bottom right,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
 }
 
 .grid-item_type_rb:hover {
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(70%, rgba(255, 255, 255, 0.01)), color-stop(150%, rgba(255, 255, 255, 0.65)));
-  background: -o-linear-gradient(bottom right, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
-  background: linear-gradient(to top left, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
+  background: -webkit-gradient(
+    linear,
+    right bottom,
+    left top,
+    color-stop(70%, rgba(255, 255, 255, 0.01)),
+    color-stop(150%, rgba(255, 255, 255, 0.65))
+  );
+  background: -o-linear-gradient(
+    bottom right,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
   border-top: 1px solid #8e9198;
   border-left: 1px solid #8e9198;
 }
 
 .grid-item_type_lb {
   margin-right: 10px;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(25%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.03)));
-  background: -o-linear-gradient(bottom left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
-  background: linear-gradient(to top right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    color-stop(25%, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 0.03))
+  );
+  background: -o-linear-gradient(
+    bottom left,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
 }
 
 .grid-item_type_lb:hover {
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(70%, rgba(255, 255, 255, 0.01)), color-stop(150%, rgba(255, 255, 255, 0.65)));
-  background: -o-linear-gradient(bottom left, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
-  background: linear-gradient(to top right, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    color-stop(70%, rgba(255, 255, 255, 0.01)),
+    color-stop(150%, rgba(255, 255, 255, 0.65))
+  );
+  background: -o-linear-gradient(
+    bottom left,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
   border-top: 1px solid #8e9198;
   border-right: 1px solid #8e9198;
 }
 
 .grid-item_type_lt {
   margin-right: 10px;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.03)));
-  background: -o-linear-gradient(top left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.03) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(25%, rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 0.03))
+  );
+  background: -o-linear-gradient(
+    top left,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
 }
 
 .grid-item_type_lt:hover {
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(70%, rgba(255, 255, 255, 0.01)), color-stop(150%, rgba(255, 255, 255, 0.65)));
-  background: -o-linear-gradient(top left, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.01) 70%, rgba(255, 255, 255, 0.65) 150%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(70%, rgba(255, 255, 255, 0.01)),
+    color-stop(150%, rgba(255, 255, 255, 0.65))
+  );
+  background: -o-linear-gradient(
+    top left,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.01) 70%,
+    rgba(255, 255, 255, 0.65) 150%
+  );
   border-bottom: 1px solid #8e9198;
   border-right: 1px solid #8e9198;
 }
@@ -369,9 +483,10 @@
 
 @media screen and (max-width: 450px) {
   .image {
-    width: 300px;
-    height: 50px;
-}
+    background-image: url(../images/title-mini.png);
+    width: 290px;
+    height: 53px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -382,19 +497,33 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0 auto;
-}
+  }
 
+  .grid-item_type_lb:hover {
+    border: 1px solid #8e9198;
+  }
 
-.grid-item {
-  margin-bottom: 20px;
-}
-}
+  .grid-item_type_lt:hover {
+    border: 1px solid #8e9198;
+  }
 
+  .grid-item_type_rb:hover {
+    border: 1px solid #8e9198;
+  }
+
+  .grid-item_type_rt:hover {
+    border: 1px solid #8e9198;
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+  }
+}
 
 /* --------5. Main (END)---------*/
