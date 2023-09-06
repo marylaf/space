@@ -505,6 +505,14 @@
     margin: 0 auto;
   }
 
+  .row {
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+  }
+
+  .grid-item {
+    margin-right: 0;
+  }
+
   .grid-item_type_lb:hover {
     border: 1px solid #8e9198;
   }
