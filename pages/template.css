@@ -91,7 +91,7 @@
 /* --------4. Header (START)---------*/
 
 .navbar-nav {
-  min-width: 636px;
+  min-width: 680px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -146,6 +146,10 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.container {
+  padding: 0;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
