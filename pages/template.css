@@ -79,12 +79,6 @@
   }
 }
 
-/* @media screen and (max-width: 1750px) {
-  .page__container {
-    background-size: cover;
-  }
-} */
-
 .page__container_type_dublicate {
   background-image: url(../images/mars.png);
   z-index: 1;
@@ -236,8 +230,8 @@
 }
 
 .column {
-  max-width: 370px;
-  margin-bottom: 145px;
+  max-width: 330px;
+  margin-bottom: 160px;
 }
 
 
@@ -278,6 +272,7 @@
   font-family: "Museo Sans Cyrl";
   color: #ffffff;
   margin: 0;
+  white-space: nowrap;
 }
 
 .grid-item__paragraph {
@@ -294,11 +289,16 @@
 }
 
 .row-top {
+  justify-content: flex-end;
   margin-top: 35px;
 }
 
 .margin-right {
   margin-right: 10px;
+}
+
+.padding-right {
+  padding-right: 30px;
 }
 
 .margin-top {
@@ -338,6 +338,7 @@
 }
 
 .grid-item_type_rt {
+  align-items: end;
   background: -webkit-gradient(
     linear,
     right top,
@@ -355,6 +356,7 @@
     rgba(255, 255, 255, 0) 25%,
     rgba(255, 255, 255, 0.03) 100%
   );
+  padding-top: 10px;
 }
 
 .grid-item_type_rt:hover {
@@ -380,6 +382,7 @@
 }
 
 .grid-item_type_rb {
+  align-items: end;
   background: -webkit-gradient(
     linear,
     right bottom,
@@ -422,7 +425,6 @@
 }
 
 .grid-item_type_lb {
-  margin-right: 10px;
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -440,6 +442,7 @@
     rgba(255, 255, 255, 0) 25%,
     rgba(255, 255, 255, 0.03) 100%
   );
+  padding-right: 20px;
 }
 
 .grid-item_type_lb:hover {
@@ -465,7 +468,7 @@
 }
 
 .grid-item_type_lt {
-  margin-right: 10px;
+  padding-top: 10px;
   background: -webkit-gradient(
     linear,
     left top,
